@@ -1,0 +1,5 @@
+<h2>Community</h2>
+
+<div class="well" *ngFor="let user of users">
+    <h3 (click)="goToUserDetails(user)"><em>{{user.name}}</em>: {{user.email}}</h3>
+</div>
