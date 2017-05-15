@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="addNewUserHeader">Add New User</h3>
+      </div>
+      <div class="panel-body">
+        <div>
+          <label>New User Name:</label>
+          <br>
+          <input #newName>
+        </div>
+        <div>
+          <label>New User Email:</label>
+          <br>
+          <input #newEmail>
+        </div><br>
+        <button (click)="submitForm(newName.value, newEmail.value); newName.value=''; newEmail.value=''">Add New User</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="well" *ngFor="let user of users | async">
+        <h3><strong><span class="nameLink"(click)="goToUserDetails(user)">{{user.name}}</span></strong><small> {{user.email}}</small></h3>
+    </div>
+  </div>
+</div>

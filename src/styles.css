@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  right: 10px;
+  top: 5px;
+}
+
+#title {
+  font-family: 'Slabo 27px', serif;
+  font-size: 65px;
+  font-weight: 500;
+}
+
+#footerCommunity, #footerAbout, #footerHome {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.addNewUserHeader {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: bolder;
+}
+
+.nameLink {
+  color: blue;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.nameLink:hover {
+  text-shadow: 2px 2px 5px gray;
+  font-weight: bolder;
+  cursor: pointer;
+}

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { User } from './user.model';
-import { USERS } from './mock-users';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -16,12 +15,12 @@ export class UserService {
     return this.users;
   }
 
-  getUserById(userId: number){
-    for (var i = 0; i <= USERS.length - 1; i++) {
-      if (USERS[i].id === userId) {
-        return USERS[i];
-      }
-    }
+  addUser(newUser: User) {
+    this.users.push(newUser);
+  }
+
+  getUserById(userId: string){
+    return this.database.object('users/' + userId);
   }
 
 }

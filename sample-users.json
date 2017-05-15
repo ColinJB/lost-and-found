@@ -1,14 +1,11 @@
 { "users": [{
     "name": "Chris Carr",
-    "email": "coderknot@github.com",
-    "id": 3
+    "email": "coderknot@github.com"
   }, {
     "name": "Colin Bloom",
-    "email": "colinjbloom113@gmail.com",
-    "id": 1
+    "email": "colinjbloom113@gmail.com"
   }, {
     "name": "Grace Stuart",
-    "email": "gstuart@gmail.com",
-    "id": 2
+    "email": "gstuart@gmail.com"
   }]
 }

@@ -19,8 +19,8 @@ export class CommunityComponent implements OnInit {
     this.users = this.userService.getUsers();
   }
 
-  goToUserDetails(clickedUser: User) {
-    this.router.navigate(['users', clickedUser.id]);
+  goToUserDetails(clickedUser) {
+    this.router.navigate(['users', clickedUser.$key]);
   };
 
 }

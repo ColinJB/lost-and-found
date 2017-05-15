@@ -4,6 +4,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { CommunityComponent }   from './community/community.component';
 import { UserDetailComponent }   from './user-detail/user-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 
 const appRoutes: Routes = [
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
   {
     path: 'users/:id',
     component: UserDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 

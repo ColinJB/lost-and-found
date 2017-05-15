@@ -1,5 +1,8 @@
+<header>
+  <a class="text-muted" routerLink="admin">Admin</a>
+</header>
 <div class="container">
-  <h1>{{title}}</h1>
+  <h1 id="title">{{title}}</h1>
   <router-outlet></router-outlet>
-  <footer><a routerLink="">Home</a> <a routerLink="about">About</a> <a routerLink="community">Community</a></footer>
 </div>
+<footer><a id="footerAbout" routerLink="about">About</a> <a id="footerHome" routerLink="">Home</a> <a id="footerCommunity" routerLink="community">Community</a></footer>
