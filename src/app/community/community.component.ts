@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../user.model';
 import { Router } from '@angular/router';
 import { UserService } from '../user.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-community',
@@ -10,10 +11,9 @@ import { UserService } from '../user.service';
   providers: [UserService]
 })
 export class CommunityComponent implements OnInit {
+  users: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private userService: UserService) { }
-
-  users: User[];
 
   ngOnInit() {
     this.users = this.userService.getUsers();
