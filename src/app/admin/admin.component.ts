@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   providers: [UserService]
 })
 export class AdminComponent implements OnInit {
-
+  currentRoute: string = this.router.url;
   users: FirebaseListObservable<any[]>;
 
   constructor(private userService: UserService, private router: Router) { }

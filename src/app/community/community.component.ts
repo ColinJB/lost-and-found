@@ -11,6 +11,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [UserService]
 })
 export class CommunityComponent implements OnInit {
+  currentRoute: string = this.router.url;
   users: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private userService: UserService) { }

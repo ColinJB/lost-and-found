@@ -17,6 +17,10 @@ header {
   font-weight: 500;
 }
 
+#communityTitle {
+  text-align: right;
+}
+
 #footerCommunity, #footerAbout, #footerHome {
   padding-left: 200px;
   padding-right: 200px;
