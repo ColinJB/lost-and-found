@@ -11,19 +11,74 @@ header {
   top: 5px;
 }
 
-#title {
-  font-family: 'Slabo 27px', serif;
+button {
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid rgba(255, 163, 26,.5);
+}
+
+button:hover {
+  box-shadow: 2px 2px 5px black;
+}
+
+#newUserForm {
+  padding-top: 64px;
+}
+
+#lostTitle {
+  color: rgba(117, 106, 106, 0.35);
   font-size: 65px;
   font-weight: 500;
+  text-shadow: 2px 2px 10px rgba(117, 106, 106, 0.5);
+}
+
+#foundTitle {
+  font-size: 85px;
+  font-weight: bold;
+  text-shadow: 3px 3px 50px orange;
+  color: white;
+}
+
+#andTitle {
+  color: rgba(117, 106, 106, 0.5);
+}
+
+#title {
+  font-family: 'Slabo 27px', serif;
 }
 
 #communityTitle {
   text-align: right;
+  color: rgb(255, 163, 26);
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 1px 1px black;
+  font-size: 35px;
 }
 
 #footerCommunity, #footerAbout, #footerHome {
   padding-left: 200px;
   padding-right: 200px;
+}
+
+#adminIcon {
+  float: right;
+  padding-right: 20px;
+}
+
+#communityWells {
+  background-color: rgba(255, 221, 153,.1);
+}
+
+.panel {
+  border: 1px 1px solid black;
+}
+
+.panel-heading {
+  background-color: rgba(255, 221, 153,.3);
+}
+
+.panel-body {
+  background-color: rgba(117, 106, 106, 0.1);
 }
 
 .addNewUserHeader {
@@ -32,14 +87,17 @@ header {
 }
 
 .nameLink {
-  text-shadow: 1px 1px 1px rgb(255, 124, 2);
-  font-family: 'Slabo 27px', serif;
   font-weight: 500;
   font-size: 30px;
+  padding-right: 10px;
+  color: rgb(255, 163, 26);
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 1px 1px black;
 }
 
 .nameLink:hover {
   text-shadow: 2px 2px 10px rgb(255, 124, 2);
   font-weight: bolder;
+  color: rgba(117, 106, 106, .7);
   cursor: pointer;
 }

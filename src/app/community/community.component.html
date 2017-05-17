@@ -5,9 +5,10 @@
   <option value="nonAdmin">Non-Admins</option>
 </select>
 <hr>
-<div class="well" *ngFor="let user of users | async | admin:filterByAdmin">
+<div id="communityWells" class="well well-sm" *ngFor="let user of users | async | admin:filterByAdmin">
   <h3>
     <strong><span class="nameLink"(click)="goToUserDetails(user)">{{user.name}}</span></strong><small> {{user.email}}</small>
+    <i id="adminIcon" title="Admin" *ngIf="user.admin === 'true'" class="glyphicon glyphicon-lock"></i>
   </h3>
   <div *ngIf="currentRoute === '/admin'">
     <button *ngIf="user.showEdit === 'false'" (click)="user.showEdit='true'">Edit User</button>
