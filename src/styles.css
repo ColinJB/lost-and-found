@@ -21,6 +21,14 @@ button:hover {
   box-shadow: 2px 2px 5px black;
 }
 
+#stuff {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px black;
+}
+
 #newUserForm {
   padding-top: 64px;
 }
@@ -32,11 +40,18 @@ button:hover {
   text-shadow: 2px 2px 10px rgba(117, 106, 106, 0.5);
 }
 
-#foundTitle {
+#foundTitle, #sloganWelcome {
   font-size: 85px;
   font-weight: bold;
   text-shadow: 3px 3px 50px orange;
   color: white;
+}
+
+#sloganWelcome {
+  position: absolute;
+  bottom: 0px;
+  right: 250px;
+  text-align: right;
 }
 
 #andTitle {

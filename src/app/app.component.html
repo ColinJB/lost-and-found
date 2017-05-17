@@ -3,6 +3,17 @@
 </header>
 <div class="container">
   <h1 id="title"><span id="lostTitle">Lost</span> <span id="andTitle">and</span> <span id="foundTitle">Found</span></h1>
+  <nav class="navbar navbar-light" style="background-color: rgba(255, 221, 153,.4);">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">Lost and Found</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="about">About</a></li>
+        <li><a routerLink="community">Community</a></li>
+      </ul>
+    </div>
+  </nav>
   <router-outlet></router-outlet>
 </div>
-<footer><a id="footerAbout" routerLink="about">About</a> <a id="footerHome" routerLink="">Home</a> <a id="footerCommunity" routerLink="community">Community</a></footer>
