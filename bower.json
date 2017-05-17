@@ -6,7 +6,7 @@
     "Colin Bloom <colinjbloom113@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/ColinJB/lost-and-found",
   "ignore": [
     "**/.*",
     "node_modules",
