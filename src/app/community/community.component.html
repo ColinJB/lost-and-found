@@ -14,4 +14,3 @@
     <app-edit-user *ngIf="user.showEdit === 'true'" [selectedUser]="user" (updateButtonClickedSender)="user.showEdit = 'false'"></app-edit-user>
   </div>
 </div>
-<h3 *ngFor="let user of users | async">{{user.name}}</h3>
