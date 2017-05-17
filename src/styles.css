@@ -54,6 +54,29 @@ button:hover {
   text-align: right;
 }
 
+#about {
+  text-align: center;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+#aboutTitle {
+  font-weight: bolder;
+  font-size: 45px;
+  text-shadow: 3px 3px 50px orange;
+  color: gray;
+}
+
+#dog {
+  box-shadow: 3px 3px 50px orange;
+  border-radius: 105px;
+}
+
+#aboutContent {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
 #andTitle {
   color: rgba(117, 106, 106, 0.5);
 }
