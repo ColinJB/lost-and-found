@@ -23,4 +23,15 @@ export class UserService {
     return this.database.object('users/' + userId);
   }
 
+  updateUser(localUpdatedUser){
+    var userEntryInFirebase = this.getUserById(localUpdatedUser.$key);
+    userEntryInFirebase.update({name: localUpdatedUser.name,
+                                email: localUpdatedUser.email});
+  }
+
+  deleteUser(localUserToDelete){
+    var userEntryInFirebase = this.getUserById(localUserToDelete.$key);
+    userEntryInFirebase.remove();
+  }
+
 }

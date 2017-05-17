@@ -1,11 +1,17 @@
 { "users": [{
     "name": "Chris Carr",
-    "email": "coderknot@github.com"
+    "email": "coderknot@github.com",
+    "showEdit": "false",
+    "admin": "false"
   }, {
     "name": "Colin Bloom",
-    "email": "colinjbloom113@gmail.com"
+    "email": "colinjbloom113@gmail.com",
+    "showEdit": "false",
+    "admin": "true"
   }, {
     "name": "Grace Stuart",
-    "email": "gstuart@gmail.com"
+    "email": "gstuart@gmail.com",
+    "showEdit": "false",
+    "admin": "false"
   }]
 }

@@ -14,8 +14,16 @@
           <label>New User Email:</label>
           <br>
           <input #newEmail>
+        </div>
+        <div>
+          <label>Admin?</label>
+          <br>
+          <select #newStatus>
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
         </div><br>
-        <button (click)="submitForm(newName.value, newEmail.value); newName.value=''; newEmail.value=''">Add New User</button>
+        <button (click)="submitForm(newName.value, newEmail.value, newStatus.value); newName.value=''; newEmail.value=''; newStatus.value=''">Add New User</button>
       </div>
     </div>
   </div>

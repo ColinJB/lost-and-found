@@ -1,5 +1,17 @@
 <h2 id="communityTitle">Community</h2>
-
-<div class="well" *ngFor="let user of users | async">
-    <h3><strong><span class="nameLink"(click)="goToUserDetails(user)">{{user.name}}</span></strong><small> {{user.email}}</small></h3>
+<select (change)="onChange($event.target.value)">
+  <option value="allUsers" selected="selected">All Users</option>
+  <option value="admin">Admins</option>
+  <option value="nonAdmin">Non-Admins</option>
+</select>
+<hr>
+<div class="well" *ngFor="let user of users | async | admin:filterByAdmin">
+  <h3>
+    <strong><span class="nameLink"(click)="goToUserDetails(user)">{{user.name}}</span></strong><small> {{user.email}}</small>
+  </h3>
+  <div *ngIf="currentRoute === '/admin'">
+    <button *ngIf="user.showEdit === 'false'" (click)="user.showEdit='true'">Edit User</button>
+    <app-edit-user *ngIf="user.showEdit === 'true'" [selectedUser]="user" (updateButtonClickedSender)="user.showEdit = 'false'"></app-edit-user>
+  </div>
 </div>
+<h3 *ngFor="let user of users | async">{{user.name}}</h3>

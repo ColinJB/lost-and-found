@@ -1,0 +1,11 @@
+<h4>Edit User</h4>
+
+<label>User Name:</label>
+<input [(ngModel)]="selectedUser.name">
+<br>
+
+<label>User Email:</label>
+<input [(ngModel)]="selectedUser.email">
+<hr>
+<button (click)="beginUpdatingUser(selectedUser)">Update</button><br>
+<button (click)="beginDeletingUser(selectedUser)">Delete</button>
